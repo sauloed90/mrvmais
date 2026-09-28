@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+<meta charset="UTF-8">
+
+<title>Dashboard Comercial</title>
+
+https://cdn.jsdelivr.net/npm/chart.jsscript>
+https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.jsscript>
+
+<style>
+
+body{
+    font-family:Arial;
+    margin:20px;
+}
+
+.container{
+    width:95%;
+    margin:auto;
+}
+
+.filtros{
+    margin-bottom:20px;
+}
+
+.card{
+    display:inline-block;
+    width:200px;
+    padding:15px;
+    margin:10px;
+    background:#f5f5f5;
+    border-radius:10px;
+    text-align:center;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+th,td{
+    border:1px solid #ccc;
+    padding:8px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>Dashboard Comercial</h1>
+
+<div class="filtros">
+
+<select id="filtroRegiao">
+<option value="">Todas Regiões</option>
+</select>
+
+</div>
+
+<div class="card">
+
+<h3>Faturamento</h3>
+
+<p id="totalVendas">R$ 0</p>
+
+</div>
+
+<canvas id="graficoVendas"></canvas>
+
+<br><br>
+
+<table id="tabela">
+
+<thead>
+<tr>
+<th>Vendedor</th>
+<th>Região</th>
+<th>Produto</th>
+<th>Valor</th>
+</tr>
+</thead>
+
+<tbody></tbody>
+
+</table>
+
+</div>
+
+dashboard.jsscript>
+
+</body>
+</html>
